@@ -25,9 +25,9 @@
  * ### git stash {将工作区的移到垃圾桶}
  1. git stash apply {恢复到工作区}
  1. git stash list  {垃圾桶列表}
+ 2. git stash apply (stash@{1}) {垃圾桶列表恢复工作区}
  * ### git push origin (分支名) {提交}
  1. git push -f origin (分支名){强制合并}
- 2. git stash apply (stash@{1}) {垃圾桶列表恢复工作区}
   * ### git pull origin (分支名) {等价于fetch merge}
  * ### git reset
  1. git reset HEAD (文件名) {从暂存区中移除文件}
