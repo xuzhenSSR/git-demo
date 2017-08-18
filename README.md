@@ -54,9 +54,9 @@
 　　　　 说明：忽略根目录下的 /fd1/ 目录的全部内容；
  1. 规则：
 /*
-!.gitignore br
-!/fw/bin/  br
-!/fw/sf/  br
+!.gitignore <br>
+!/fw/bin/  <br>
+!/fw/sf/  <br>
 说明：忽略全部内容，但是不忽略 .gitignore 文件、根目录下的 /fw/bin/ 和 /fw/sf/ 目录；
  # ERROR
  ### Non-fast-forward 
