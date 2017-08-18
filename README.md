@@ -13,12 +13,17 @@
  3. git log --author=xuzhen --oneline -5 {xuzhen提交的五条记录}
  * ### git tag -a (v1.0版本号) {添加版本标签-m加描述}
  1. git push origin -tags {将本地版本号提交远程}
+ 2. git push origin --delete tag (分支名) {删除远程版本号}
  2. git push origin :refs/tags/(v1.01版本号) {删除远程版本号}
  2. git tag -a (v1.0版本号) (commit hash)
- 2. git tag -d (v1.01版本号) (删除)
+ 2. git tag -d (v1.01版本号) {删除}
+ 2. git fetch origin tag (版本号) {获取远程tag}
  * ### git merge (分支名){将分支名合并当前分支}  
  * ### git branch (分支名) {创建新分支}
  1. git branch -d -D{强制删除} (分支名) {删除分支} -D强制删除
+ 2. git branch -a {查看远程分支红色显示}
+ 2. git push origin --delete (分支名) {删除远程分支}
+
  * ### git checkout (分支名){切换到分支名}
  1. git checkout --(分支名) {撤销工作区的修改!!少用不能恢复}
  2. git checkout -b (分支名) {迅速创建并使用新分支}
@@ -27,7 +32,9 @@
  1. git stash list  {垃圾桶列表}
  2. git stash apply (stash@{1}) {垃圾桶列表恢复工作区}
  * ### git push origin (分支名) {提交}
+ 1. git branch -m (老分支名) (新分支名) {重命名分支}
  1. git push -f origin (分支名){强制合并}
+ 2. git push --delete origin devel To git@github.com:zrong/quick-cocos2d-x.git {删除远程分支}
   * ### git pull origin (分支名) {等价于fetch merge}
  * ### git reset
  1. git reset HEAD (文件名) {从暂存区中移除文件}
@@ -35,7 +42,7 @@
  * ### git remote {查看所有远程仓库}
  1. git remote -v {可以查看远程改变}
  2. git remote set-url origin (http){新建远程仓库新建本地连接}
-
+ * ### git config --list {查看配置列表}
 
 
  * ### git grep ("Hello") {从当前目录的所有文件中查找文本内容}
